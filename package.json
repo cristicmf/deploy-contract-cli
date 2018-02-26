@@ -1,0 +1,32 @@
+{
+  "name": "deploy-contract-cli",
+  "version": "1.0.0",
+  "description": "tools for nodejs \"",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "test": "node ./index contract"
+  },
+  "author": "cristic",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "change-case": "^3.0.1",
+    "commander": "^2.11.0"
+  },
+  "dependencies": {
+    "change-case": "^3.0.1",
+    "commander": "^2.11.0"
+  },
+  "engines": {
+    "node": ">=6.10.3",
+    "npm": ">=3.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristicmf/deploy-contract-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cristicmf/deploy-contract-cli/issues"
+  },
+  "homepage": "https://github.com/cristicmf/deploy-contract-cli#readme"
+}
