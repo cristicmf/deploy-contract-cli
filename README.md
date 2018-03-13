@@ -1,6 +1,6 @@
 # 快速构建合约项目
 
-### 1. Clone
+### 1. install
 ```
 $ sudo npm install -g deploy-contract-cli
 ```
