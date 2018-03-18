@@ -20,6 +20,7 @@
 说明：如果本地的rpc端口是特殊的端口需要在config.js里面进行端口的修改
 
 ### 文件结构说明
+```
 startDemo
 ├── README.md
 ├── SimpleStartDemo.sol
@@ -41,4 +42,4 @@ startDemo
 ├── transactionObject.js
 ├── utils.js
 └── web3sync.js
-
+```
