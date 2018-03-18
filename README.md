@@ -30,19 +30,19 @@ $ babel-node index.js
 ### 4. 相关说明
 该项目只包含了合约编译，部署，测试常用的工具库
 
-### 5. 文件结构说明
+### 5. 生成的项目文件结构说明
 ```
 contract-demo
 ├── README.md
-├── SimpleStartDemo.sol  # 合约文件
+├── SimpleStartDemo.sol            # 合约文件
 ├── abi_name_service_tool.js
 ├── cns_manager.js
 ├── cns_tool.js
-├── codeUtils.js # 通用工具库
-├── config.js # 通用配置
-├── index.js # 部署和测试脚本
+├── codeUtils.js                   # 通用工具库
+├── config.js                      # 通用配置
+├── index.js                       # 部署和测试脚本
 ├── monitor.js
-├── output  # 合约abi address bin
+├── output                         # 合约abi address bin
 │   ├── StartDemo.abi
 │   ├── StartDemo.address
 │   └── StartDemo.bin
@@ -52,5 +52,5 @@ contract-demo
 ├── transactionManager.js
 ├── transactionObject.js
 ├── utils.js
-└── web3sync.js # web3js二次封装
+└── web3sync.js                    # web3js二次封装
 ```
