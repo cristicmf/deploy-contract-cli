@@ -1,16 +1,19 @@
-# 快速构建合约脚手架
+## 快速构建合约脚手架
 
-### 1. install
+### 1. 安装
+
 ```
 $ sudo npm install -g deploy-contract-cli
 ```
 
-### 2. Create Contract
+### 2. 创建合约
 deploy-contract-cli [param]
+
 ```
 $ deploy-contract-cli contract-demo
 ```
 说明：
+
 ```
 command:deploy-contract-cli
 项目名称：contract-demo 可以自定义为其他的名称
@@ -18,6 +21,7 @@ command:deploy-contract-cli
 
 ### 3. 部署和测试合约接口
 操作步骤
+
 ```
 $ cd contract-demo
 $ npm install
