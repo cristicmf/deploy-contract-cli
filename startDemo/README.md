@@ -1,9 +1,9 @@
 #####  It features: 
-- write a simple smart contract
-    - set data
-    - get data
-    - log
-- deploy a contract
+快速搭建开发合约项目：
+```
+- 包含合约测试实例
+- 包含部署合约，开发合约，编译合约通用库
+```
 
 #####  Dependence:
 - babel-node
