@@ -657,23 +657,25 @@ async function unlockAccount(account, password) {
 		})
 	});
 }
-async function rawDeploy(account,  privateKey,filename,types,params,debug) {
+// 移除：types,params,debug
+
+async function rawDeploy(account,  privateKey,filename) {
     
-    try{ 
+    //try{ 
       //用FISCO-BCOS的合约编译器fisco-solc进行编译
-      execSync("fisco-solc --overwrite --abi  --bin -o " + config.Ouputpath + "  " + filename + ".sol");
-      if( debug )
-        console.log(filename+'编译成功！');
-    } catch(e){
-      if( debug )
-        console.log(filename+'编译失败!' + e);
-    }
+    //  execSync("fisco-solc --overwrite --abi  --bin -o " + config.Ouputpath + "  " + filename + ".sol");
+     // if( debug )
+     //   console.log(filename+'编译成功！');
+    //} catch(e){
+    //  if( debug )
+    //    console.log(filename+'编译失败!' + e);
+    //}
 
         var abi=JSON.parse(fs.readFileSync(config.Ouputpath+ "./"+filename+'.abi', 'utf-8'));
         var binary=fs.readFileSync(config.Ouputpath+"./"+filename+".bin",'utf-8');
 
         var postdata = {
-                input: "0x"+binary+coder.codeParams(types,params),
+                input: "0x",
                 from: account,
                 to: null,
                 gas: 100000000,
@@ -692,7 +694,7 @@ async function rawDeploy(account,  privateKey,filename,types,params,debug) {
                                 if( receipt.contractAddress ){
                                    
 
-                                    if( debug )
+               //                     if( debug )
                                         console.log(filename+"合约地址 "+receipt.contractAddress);
                                     fs.writeFileSync(config.Ouputpath+filename+'.address', receipt.contractAddress, 'utf-8');       
 

@@ -1,4 +1,4 @@
-# 快速构建合约项目
+# 快速构建合约脚手架
 
 ### 1. install
 ```
@@ -30,15 +30,23 @@ $ babel-node index.js
 ```
 contract-demo
 ├── README.md
-├── SimpleStartDemo.sol  # 合约代码
-├── codeUtils.js
-├── config.js  # 项目配置文件
-├── index.js   # 部署合约和测试合约
-├── output     # abi/bin／address的输出
+├── SimpleStartDemo.sol  # 合约文件
+├── abi_name_service_tool.js
+├── cns_manager.js
+├── cns_tool.js
+├── codeUtils.js # 通用工具库
+├── config.js # 通用配置
+├── index.js # 部署和测试脚本
+├── monitor.js
+├── output  # 合约abi address bin
 │   ├── StartDemo.abi
 │   ├── StartDemo.address
 │   └── StartDemo.bin
 ├── package.json
+├── post.js
 ├── sha3.js
-└── web3sync.js
+├── transactionManager.js
+├── transactionObject.js
+├── utils.js
+└── web3sync.js # web3js二次封装
 ```
